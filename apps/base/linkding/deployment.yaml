@@ -30,3 +30,7 @@ spec:
               mountPath: /etc/linkding/data
           ports:
             - containerPort: 9090
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
