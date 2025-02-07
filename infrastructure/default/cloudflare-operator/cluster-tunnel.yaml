@@ -4,7 +4,7 @@ metadata:
   name: k3s-cluster-tunnel
 spec:
   newTunnel:
-    name: lanham
+    name: my-k8s-tunnel
   size: 2
   cloudflare:
     email: matt@swanify.com
