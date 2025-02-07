@@ -2,7 +2,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: cloudflare-operator
-  namespace: flux-system
+  namespace: cloudflare-operator-system
 spec:
   interval: 10m
   path: "./config/default"
@@ -10,4 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: cloudflare-operator
-  targetNamespace: default
+  targetNamespace: cloudflare-operator-system
