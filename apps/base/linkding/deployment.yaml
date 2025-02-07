@@ -30,4 +30,3 @@ spec:
               mountPath: /etc/linkding/data
           ports:
             - containerPort: 9090
-          
