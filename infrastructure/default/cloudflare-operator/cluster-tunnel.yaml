@@ -11,4 +11,5 @@ spec:
     domain: lanham.ai
     secret: cloudflare-secrets
     # accountId and accountName cannot be both empty. If both are provided, Account ID is used if valid, else falls back to Account Name.
+    accountName: lanham
     accountId: b18d8464efb190286d22cd14585b5d37
