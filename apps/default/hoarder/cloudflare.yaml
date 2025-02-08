@@ -4,7 +4,8 @@ metadata:
   name: hoarder-tunnel
   namespace: hoarder
 subjects:
-  - name: web # Name of our service 
+  - name: web # Name of our service
+    fqdn: hoarder.lanham.ai # FQDN of our service
 tunnelRef:
   kind: ClusterTunnel
   name: k3s-cluster-tunnel
