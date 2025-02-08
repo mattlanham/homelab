@@ -12,7 +12,6 @@ configMapGenerator:
 
 resources:
 - namespace.yaml
-- hoarder-secret.yaml
 - web/deployment.yaml
 - web/service.yaml
 - chrome/deployment.yaml
