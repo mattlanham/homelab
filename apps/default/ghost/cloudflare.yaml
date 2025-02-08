@@ -1,0 +1,12 @@
+apiVersion: networking.cfargotunnel.com/v1alpha1
+kind: TunnelBinding
+metadata:
+  name: ghost-tunnel
+  namespace: ghost
+subjects:
+  - name: ghost # Name of our service
+    spec:
+      fqdn: blog.lanham.ai # FQDN of our service
+tunnelRef:
+  kind: ClusterTunnel
+  name: k3s-cluster-tunnel
