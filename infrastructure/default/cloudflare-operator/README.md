@@ -1,6 +1,6 @@
 # Setup secrets (if not already completed)
 
-Install SOPS, and age
+Install [SOPS](https://github.com/getsops/sops), and [age](https://github.com/FiloSottile/age)
 ```
 brew install sops age
 ```
@@ -37,6 +37,14 @@ cat age.agekey |
 kubectl create secret generic sops-age \
 --namespace=flux-system \
 --from-file=age.agekey=/dev/stdin
+```
+
+If you are restoring the key, then this command may be useful:
+
+```
+kubectl create secret generic sops-age \
+--namespace=flux-system \
+--from-literal=age.agekey="your-private-key-string"
 ```
 
 Check that it is showing up:
