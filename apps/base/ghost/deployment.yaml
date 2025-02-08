@@ -25,13 +25,13 @@ spec:
         - name: database__client
           value: sqlite3
         - name: database__connection__filename
-          value: "/var/lib/ghost/content/data/ghost.db"
+          value: /var/lib/ghost/content/data/ghost.db
         - name: url
           value: "http://localhost:2368"
         volumeMounts:
-        - name: ghost-content
+        - name: ghost-persistent-storage
           mountPath: /var/lib/ghost/content
       volumes:
-      - name: ghost-content
+      - name: ghost-persistent-storage
         persistentVolumeClaim:
-          claimName: ghost-content
+          claimName: ghost-pvc
