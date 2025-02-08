@@ -2,7 +2,7 @@
 This repository is a WIP to learn more about self-hosting, kubernetes, and creating a secure homelab. 
 
 ## Hardware
-2 x Beelink EQ14 Mini PC
+- [Beelink EQ14 Mini PC](https://www.amazon.co.uk/dp/B09XGZ3RTM) x 2
 
 Coming soon:
 - [Tecmojo 9U Wall Mount Rack](https://www.amazon.co.uk/gp/product/B0DBRBKRS6) - Rack for other hardware
