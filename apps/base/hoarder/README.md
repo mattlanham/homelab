@@ -14,3 +14,4 @@ kubectl -n hoarder create secret generic hoarder-secrets \
   --from-literal=NEXT_PUBLIC_SECRET=<secret> \
   --dry-run=client -o yaml > hoarder-secrets.yaml
 ```
+

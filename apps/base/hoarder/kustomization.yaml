@@ -19,7 +19,6 @@ resources:
 - meilisearch/service.yaml
 - meilisearch/pvc.yaml
 - data-pvc.yaml
-- hoarder-secrets.yaml
 
 replacements:
 - source:
