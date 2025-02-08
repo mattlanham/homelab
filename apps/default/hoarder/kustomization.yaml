@@ -4,3 +4,4 @@ namespace: hoarder
 resources:
   - ../../base/hoarder
   - cloudflare.yaml
+  - hoarder-secret.yaml
