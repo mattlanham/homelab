@@ -4,7 +4,7 @@ metadata:
   name: hoarder-tunnel
   namespace: hoarder
 subjects:
-  - name: hoarder # Name of our service 
+  - name: hoarder-web # Name of our service 
 tunnelRef:
   kind: ClusterTunnel
   name: k3s-cluster-tunnel
