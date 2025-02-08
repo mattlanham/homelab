@@ -4,6 +4,9 @@ This repository is a WIP to learn more about self-hosting, kubernetes, and creat
 ## Hardware
 2 x Beelink EQ14 Mini PC
 
+Coming soon:
+- [Tecmojo 9U Wall Mount Rack](https://www.amazon.co.uk/gp/product/B0DBRBKRS6) - Rack for other hardware
+
 ## Software
 - [Proxmox](https://www.proxmox.com/en/) - manages the VMs
 - [Ubuntu 24.04.1 LTS](https://ubuntu.com/download/server) - OS
