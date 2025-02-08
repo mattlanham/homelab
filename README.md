@@ -4,7 +4,6 @@ This repository is a WIP to learn more about self-hosting, kubernetes, and creat
 ## Hardware
 2 x Beelink EQ14 Mini PC
 
-
 ## Software
 - [Proxmox](https://www.proxmox.com/en/) - manages the VMs
 - [Ubuntu 24.04.1 LTS](https://ubuntu.com/download/server) - OS
@@ -14,15 +13,9 @@ This repository is a WIP to learn more about self-hosting, kubernetes, and creat
 - [Kustomize](https://kustomize.io/) - Native k8s config manager
 
 
-## Setting up a linkding user
-First of all get all the pods running
-`kubectl get pods -A`
-
-Look for the linkding pod, and copy the name and run:
-`kubectl exec -it <linkding-pod-name> -n <namespace> -- /bin/sh`
-
-Then you can setup a user by running
-`python manage.py createsuperuser`
+## Apps running
+- [Hoarder](https://hoarder.app/) - Bookmarking+ (ai tags, easy to use)
+- [Cloudflare Tunnel])(https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) - Connect to the homelab from the internet (securely)
 
 # Resources
 - [Fantastic tutorial on setting up a homelab](https://bash.ghost.io/)
