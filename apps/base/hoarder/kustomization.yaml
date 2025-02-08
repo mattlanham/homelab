@@ -12,6 +12,7 @@ configMapGenerator:
 
 resources:
 - namespace.yaml
+- hoarder-secret.yaml
 - web/deployment.yaml
 - web/service.yaml
 - chrome/deployment.yaml
@@ -20,7 +21,6 @@ resources:
 - meilisearch/service.yaml
 - meilisearch/pvc.yaml
 - data-pvc.yaml
-- hoarder-secret.yaml
 
 replacements:
 - source:
