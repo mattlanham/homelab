@@ -12,5 +12,11 @@ kubectl -n hoarder create secret generic hoarder-secrets \
   --from-literal="NEXTAUTH_SECRET=<secret>" \
   --from-literal="MEILI_MASTER_KEY=<secret>" \
   --from-literal="NEXT_PUBLIC_SECRET=<secret>" \
-  --from-literal="OPENAI_API_KEY=<secret>"
+  --from-literal="OPENAI_API_KEY=<secret>" \
+  --dry-run=client -o yaml > hoarder-secret.yaml
+```
+
+Whilst in the `clusers/default` directory run:
+```
+sops --encrypt --in-place ../../apps/base/hoarder/hoarder-secret.yaml
 ```
