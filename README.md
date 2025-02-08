@@ -15,7 +15,7 @@ This repository is a WIP to learn more about self-hosting, kubernetes, and creat
 
 ## Apps running
 - [Hoarder](https://hoarder.app/) - Bookmarking+ (ai tags, easy to use)
-- [Cloudflare Tunnel])(https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) - Connect to the homelab from the internet (securely)
+- [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) - Connect to the homelab from the internet (securely)
 
 # Resources
 - [Fantastic tutorial on setting up a homelab](https://bash.ghost.io/)
