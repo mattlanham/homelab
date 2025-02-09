@@ -4,9 +4,11 @@ metadata:
   name: homeassistant-service
   namespace: homeassistant
 spec:
+  type: NodePort
   selector:
     app: homeassistant-label
   ports:
   - name: homeassistant
     port: 8123
     targetPort: 8123
+    nodePort: 30123
