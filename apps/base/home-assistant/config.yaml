@@ -9,9 +9,7 @@ data:
     http:
       use_x_forwarded_for: true
       trusted_proxies:
-        - 10.42.2.39
-        - 10.42.1.10
-        - 10.42.2.29
+        - 10.42.0.0/16
         - 192.168.1.0/24
 
     # Evohome Integration
