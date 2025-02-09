@@ -14,8 +14,6 @@ spec:
         app: homeassistant-label
     spec:
       hostNetwork: true
-      nodeSelector:
-        kubernetes.io/hostname: homeassistant
       containers:
       - name: homeassistant
         image: homeassistant/home-assistant:stable
