@@ -8,16 +8,15 @@ data:
     # Configure a default setup of Home Assistant (frontend, api, etc)
     default_config:
 
-    # HTTP Configuration for reverse proxy
+    # HTTP Configuration
     http:
-      use_x_forwarded_for: true
-      trusted_proxies:
-        - 10.42.1.10  # Specific proxy IP from error
-        - 10.0.0.0/8  # All private IPs in this range
-        - '*'  # Trust all proxies since we're behind Cloudflare
-      ip_ban_enabled: false
       server_host: 0.0.0.0
+      use_x_forwarded_for: true
       use_x_forwarded_host: true
+      trusted_proxies:
+      - 10.42.1.10
+      - 10.42.0.0/16
+      - 10.43.0.0/16
 
     # Evohome Integration
     evohome:
