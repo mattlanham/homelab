@@ -3,8 +3,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: homeassistant-pv-time
   namespace: homeassistant
-  labels:
-    app: homeassistant-label
 spec:
   accessModes:
     - ReadWriteOnce
@@ -18,8 +16,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: homeassistant-pv-config
   namespace: homeassistant
-  labels:
-    app: homeassistant-label
 spec:
   accessModes:
     - ReadWriteOnce

@@ -2,25 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: homeassistant
-  namespace: homeassistant
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: homeassistant-label
+      app: homeassistant
   template:
     metadata:
       labels:
-        app: homeassistant-label
+        app: homeassistant
     spec:
       containers:
       - name: homeassistant
         image: homeassistant/home-assistant:stable
-        env:
-          - name: USE_X_FORWARDED_FOR
-            value: "true"
-          - name: TRUSTED_PROXIES
-            value: "192.168.1.101,192.168.1.102,192.168.1.175,192.168.1.247"
         ports:
           - containerPort: 8123
         resources:
