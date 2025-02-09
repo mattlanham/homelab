@@ -4,7 +4,7 @@ metadata:
   name: homeassistant-service
   namespace: homeassistant
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: homeassistant
   ports:
