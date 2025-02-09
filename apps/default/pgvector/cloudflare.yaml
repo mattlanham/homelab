@@ -3,6 +3,10 @@ kind: TunnelBinding
 metadata:
   name: pgvector-tunnel
   namespace: pgvector
+spec:
+  backend:
+    tcp:
+      port: 5432
 subjects:
   - name: pgvector # Name of our service 
 tunnelRef:
