@@ -3,11 +3,11 @@ kind: TunnelBinding
 metadata:
   name: pgvector-tunnel
   namespace: pgvector
-spec:
-  rules:
-    - service: pgvector
-      port: 5432
-      fqdn: pgvector.lanham.ai
+serviceRef:
+  name: pgvector
+  port: 5432
+  external:
+    fqdn: pgvector.lanham.ai
 subjects:
   - name: pgvector # Name of our service 
 tunnelRef:
