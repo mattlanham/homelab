@@ -8,6 +8,14 @@ data:
     # Configure a default setup of Home Assistant (frontend, api, etc)
     default_config:
 
+    # HTTP Configuration for reverse proxy
+    http:
+      use_x_forwarded_for: true
+      trusted_proxies:
+        - 10.42.0.0/16  # Trust the entire cluster CIDR range
+        - 127.0.0.1
+        - ::1
+
     # Evohome Integration
     evohome:
       username: !secret evohome_username
