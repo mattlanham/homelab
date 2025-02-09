@@ -5,6 +5,9 @@ metadata:
   namespace: homeassistant
 subjects:
   - name: homeassistant # Name of our service 
+    ingress:
+      - hostname: homeassistant.lanham.ai
+        service: http://homeassistant-service.homeassistant:8123
 tunnelRef:
   kind: ClusterTunnel
   name: k3s-cluster-tunnel
