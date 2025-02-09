@@ -4,3 +4,4 @@ namespace: homeassistant
 resources:
 - ../../base/home-assistant
 - secrets.yaml
+- cloudflare.yaml
