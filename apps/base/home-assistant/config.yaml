@@ -13,8 +13,12 @@ data:
       use_x_forwarded_for: true
       trusted_proxies:
         - 10.42.0.0/16  # Trust the entire cluster CIDR range
+        - 10.43.0.0/16  # Trust service CIDR range
         - 127.0.0.1
         - ::1
+      ip_ban_enabled: false
+      server_host: 0.0.0.0
+      use_x_forwarded_host: true
 
     # Evohome Integration
     evohome:
