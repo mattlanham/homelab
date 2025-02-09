@@ -5,19 +5,16 @@ metadata:
   namespace: homeassistant
 data:
   configuration.yaml: |
-    # HTTP Configuration
     http:
       use_x_forwarded_for: true
       trusted_proxies:
         - 10.42.0.0/16
         - 192.168.1.0/24
 
-    # Evohome Integration
     evohome:
       username: !secret evohome_username
       password: !secret evohome_password
       location_idx: 0  # Optional, defaults to 0.
       scan_interval: 300  # Optional, defaults to 300 seconds.
 
-    # Load secrets from secrets.yaml
-    secrets: !include secrets.yaml 
+    secrets: !include secrets.yaml
