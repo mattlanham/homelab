@@ -30,6 +30,7 @@ This repository is a WIP to learn more about self-hosting, kubernetes, and creat
 
 ### Applications
 - [Ghost](https://ghost.org/) - Modern, open-source publishing platform with a clean interface and membership capabilities
+- [Home Assistant](https://www.home-assistant.io/) - Open source home automation platform that puts local control and privacy first
 - [Hoarder](https://hoarder.app/) - AI-powered bookmarking tool that automatically tags and organizes saved content
 - [IT Tools](https://github.com/CorentinTh/it-tools) - Collection of utilities for developers including encoders, formatters, and generators
 
