@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: homeassistant-label
+    app: homeassistant
   ports:
   - name: homeassistant
     port: 8123
