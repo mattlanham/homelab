@@ -8,9 +8,3 @@ subjects:
 tunnelRef:
   kind: ClusterTunnel
   name: k3s-cluster-tunnel
-env:
-  - name: POSTGRES_URL
-    valueFrom:
-      secretKeyRef:
-        name: nextjs-docker-secrets
-        key: POSTGRES_URL
