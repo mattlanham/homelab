@@ -16,6 +16,7 @@ data:
       server_port: 8123
       cors_allowed_origins:
         - "https://home-assistant.local"
+        - "https://homeassistant.lanham.ai"
 
     evohome:
       username: !secret evohome_username
