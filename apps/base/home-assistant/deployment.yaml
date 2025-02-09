@@ -13,7 +13,6 @@ spec:
       labels:
         app: homeassistant-label
     spec:
-      hostNetwork: true
       containers:
       - name: homeassistant
         image: homeassistant/home-assistant:stable
@@ -25,8 +24,11 @@ spec:
         ports:
           - containerPort: 8123
         resources:
+          requests:
+            cpu: 200m
+            memory: 512Mi
           limits:
-            cpu: 1000m
+            cpu: 800m
             memory: 1024Mi
         volumeMounts:
           - mountPath: /config
