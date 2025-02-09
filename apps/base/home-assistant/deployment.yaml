@@ -36,6 +36,12 @@ spec:
           - mountPath: /etc/localtime
             name: homeassistant-pv-time
             readOnly: true
+          - mountPath: /config/configuration.yaml
+            name: homeassistant-config
+            subPath: configuration.yaml
+          - mountPath: /config/secrets.yaml
+            name: homeassistant-secrets
+            subPath: secrets.yaml
       restartPolicy: Always
       volumes:
         - name: homeassistant-pv-config
@@ -45,4 +51,10 @@ spec:
           persistentVolumeClaim:
             claimName: homeassistant-pv-time
             readOnly: true
+        - name: homeassistant-config
+          configMap:
+            name: homeassistant-config
+        - name: homeassistant-secrets
+          secret:
+            secretName: homeassistant-secrets
 status: {}

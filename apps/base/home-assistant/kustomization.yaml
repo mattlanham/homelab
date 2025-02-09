@@ -7,3 +7,4 @@ resources:
 - ingress.yaml
 - persistent-volume-claim.yaml
 - service.yaml
+- config.yaml

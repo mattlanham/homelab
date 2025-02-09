@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: homeassistant
 resources:
 - ../../base/home-assistant
+- secrets.yaml
