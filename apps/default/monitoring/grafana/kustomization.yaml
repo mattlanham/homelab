@@ -3,4 +3,3 @@ kind: Kustomization
 
 resources:
 - ../../../../apps/base/monitoring/grafana
-- grafana-secret.yaml 
