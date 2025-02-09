@@ -4,3 +4,4 @@ namespace: nextjs-docker
 resources:
   - ../../projects/nextjs-docker
   - cloudflare.yaml
+  - nextjs-docker-secret.yaml
