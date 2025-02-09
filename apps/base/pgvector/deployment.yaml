@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgvector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pgvector
+  template:
+    metadata:
+      labels:
+        app: pgvector
+    spec:
+      containers:
+        - name: pgvector
+          image: ankane/pgvector:latest
+          ports:
+            - containerPort: 5432
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 1Gi
