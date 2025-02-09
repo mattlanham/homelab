@@ -18,5 +18,5 @@ kubectl -n hoarder create secret generic hoarder-secrets \
 
 Whilst in the `clusers/default` directory run:
 ```
-sops --encrypt --in-place ../../apps/base/hoarder/hoarder-secret.yaml
+sops --encrypt --in-place ../../apps/default/hoarder/hoarder-secret.yaml
 ```
