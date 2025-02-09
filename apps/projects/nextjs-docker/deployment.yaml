@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nextjs-docker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nextjs-docker
+  template:
+    metadata:
+      labels:
+        app: nextjs-docker
+    spec:
+      containers:
+      - name: nextjs-docker
+        image: mattlanham/nextjs-docker:latest
+        resources:
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        ports:
+        - containerPort: 3000
