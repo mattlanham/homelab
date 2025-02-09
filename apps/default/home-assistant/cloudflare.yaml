@@ -4,7 +4,7 @@ metadata:
   name: homeassistant-tunnel
   namespace: homeassistant
 subjects:
-  - name: homeassistant # Name of our service 
+  - name: homeassistant-service # Name of our service 
     spec:
       fqdn: homeassistant.lanham.ai # FQDN of our service
 tunnelRef:
