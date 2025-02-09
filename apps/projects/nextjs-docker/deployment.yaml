@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nextjs-docker
-        image: mattlanham/nextjs-docker:latest
+        image: mattlanham/nextjs-docker:main
         resources:
           limits:
             cpu: 500m
