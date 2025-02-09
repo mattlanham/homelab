@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: pgvector
 resources:
   - ../../base/pgvector
-  - cloudflare.yaml
   - pgvector-secret.yaml
