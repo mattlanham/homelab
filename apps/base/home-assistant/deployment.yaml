@@ -2,15 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: homeassistant
+  namespace: homeassistant
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: homeassistant
+      app: homeassistant-label
   template:
     metadata:
       labels:
-        app: homeassistant
+        app: homeassistant-label
     spec:
       containers:
       - name: homeassistant
