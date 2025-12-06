@@ -21,3 +21,5 @@ data:
       password: !secret evohome_password
       location_idx: 0  # Optional, defaults to 0.
       scan_interval: 300  # Optional, defaults to 300 seconds.
+
+    automation: !include automations.yaml
