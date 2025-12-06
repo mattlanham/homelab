@@ -5,4 +5,5 @@ resources:
   - namespace.yaml
   - helm-repository.yaml
   - helm-release.yaml
+  - cert-manager-kustomization.yaml
 
