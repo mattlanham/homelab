@@ -5,6 +5,10 @@ metadata:
   namespace: homeassistant
 data:
   configuration.yaml: |
+    mobile_app:
+    ios:
+    cloud:
+
     http:
       use_x_forwarded_for: true
       trusted_proxies:
